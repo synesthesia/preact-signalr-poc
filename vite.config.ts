@@ -4,13 +4,12 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    assetsDir: ''
+    assetsDir: '',
   },
   esbuild: {
     jsxFactory: 'h',
-    jsxFragment: 'Fragment'
-    
+    jsxFragment: 'Fragment',
   },
-  
-  plugins: [preactRefresh()]
+
+  plugins: [preactRefresh()],
 })
