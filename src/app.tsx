@@ -1,10 +1,10 @@
 import { h, Fragment } from 'preact'
-import { ListSyncMessageCollection } from './listsyncmessagecollection'
+import { ListSyncMessageDisplay } from './listsyncmessagedisplay'
 
 export function App() {
   return (
     <>
-      <ListSyncMessageCollection
+      <ListSyncMessageDisplay
         signalrUrl={import.meta.env.VITE_SIGNALR_INFORMATION}
         xrmListId={null}
       />
