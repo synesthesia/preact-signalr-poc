@@ -10,4 +10,6 @@ As written expects an environment variable named VITE_SIGNALR_INFORMATION which 
 
 In my case this was an Http Triggered Azure Function within the application that is generating the messages to which we are listening.
 
+If you are using a Function App in this way, Rememberr to allow http://localhost:3000 in your CORS settings.
+
 Some tool configuration cribbed from [TomokiMiyauci](https://github.com/TomokiMiyauci) here [Building a Typescript Environment for Preact with Vite](https://intellisense.dev/post/vite-preact-typescript/)
