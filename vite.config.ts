@@ -1,8 +1,12 @@
+import { join } from 'path'
 import preactRefresh from '@prefresh/vite'
 import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  alias: {
+    '/@/': join(__dirname, 'src'),
+  },
   build: {
     assetsDir: '',
   },
